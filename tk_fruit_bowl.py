@@ -15,3 +15,9 @@ Sample Input
 
 Sample Output 
 4"""
+
+def fruit_bowl(fruits):
+    return int((fruits / 2) // 3)
+
+total_fruits = int(input("Введите четное число: "))
+print(fruit_bowl(total_fruits))
