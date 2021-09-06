@@ -31,16 +31,12 @@ false
 
 # 3. Solution
 
-def isogramdetector_1():
-   someword = input("Введите слово для проверки: ")
+def isogramdetector_1(isogram_test):
    num = 0
-   for i in someword:
-      if someword.count(i) == 1:
+   for i in isogram_test:
+      if isogram_test.count(i) == 1:
          num += 1
-   if num == len(someword):
-      print("true")
-   else:
-      print("false")
+   return num == len(isogram_test)
       
-
-isogramdetector_1()
+someword = input("Введите слово для проверки: ")
+print(isogramdetector_1(someword))
