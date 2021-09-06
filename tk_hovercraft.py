@@ -14,3 +14,16 @@ A string that says 'Profit', 'Loss', or 'Broke Even'
 Sample Input: 5
 
 Sample Output: Loss"""
+
+def monthly_balance(sales):
+    balance = sales * 3 - 21
+    if balance > 0:
+        print("Profit")
+    elif balance < 0:
+        print("Loss")
+    else:
+        print("Broke Even")
+
+number_sales = int(input("Введите число продаж: "))
+
+monthly_balance(number_sales)
