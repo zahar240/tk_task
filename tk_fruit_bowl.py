@@ -2,7 +2,8 @@
 Half of them are bananas, and the other half are apples. You need 3 apples to make a pie. 
 
 Task 
-Your task is to evaluate the total number of pies that you can make with the apples that are in your bowl given to total amount of fruit in the bowl.
+Your task is to evaluate the total number of pies that you can make with the apples 
+that are in your bowl given to total amount of fruit in the bowl.
 
 Input Format
 An integer that represents the total amount of fruit in the bowl.
