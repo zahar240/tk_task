@@ -21,13 +21,13 @@ give away"""
 
 def popsicles_move(children, popsicles):
     if popsicles % children == 0:
-        move = "give away"
-    else:
-        move = "eat them yourself"
-    return move
+        return True
+    return False
 
 children_count = int(input("Введите количество детей: "))
 popsicles_count = int(input("Введите количество мороженного: "))
 
-print(popsicles_move(children_count, popsicles_count))
-
+if popsicles_move(children_count, popsicles_count):
+    print("give away")
+else:
+    print("eat them yourself")
