@@ -18,11 +18,13 @@ Sample Output:
 19.26"""
 
 def sale_kaleidoscopes(count):
+    kaleidoscope_prise = 5
+    sale = 10
+    tax = 7
+    kaleidoscope_prise_sale = kaleidoscope_prise * (100 + tax) / 100
     if count > 1:
-        sale = count * 5 * 0.9 * 1.07
-    elif count == 1:
-        sale = 5.35
-    return round(sale, 2)
+        kaleidoscope_prise_sale = count * kaleidoscope_prise_sale * (100 - sale) / 100  
+    return round(kaleidoscope_prise_sale, 2)
 
 count_kaleidoscopes = int(input("Введите целое число: "))
 
