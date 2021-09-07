@@ -18,12 +18,13 @@ Sample Output: Loss"""
 def monthly_balance(sales):
     balance = sales * 3 - 21
     if balance > 0:
-        print("Profit")
+        result = "Profit"
     elif balance < 0:
-        print("Loss")
+        result = "Loss"
     else:
-        print("Broke Even")
+        result = "Broke Even"
+    return result
 
 number_sales = int(input("Введите число продаж: "))
 
-monthly_balance(number_sales)
+print(monthly_balance(number_sales))
