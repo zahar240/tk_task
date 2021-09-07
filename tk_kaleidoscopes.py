@@ -16,3 +16,14 @@ Sample Input:
 
 Sample Output: 
 19.26"""
+
+def sale_kaleidoscopes(count):
+    if count > 1:
+        sale = count * 5 * 0.9 * 1.07
+    elif count == 1:
+        sale = 5.35
+    return round(sale, 2)
+
+count_kaleidoscopes = int(input("Введите целое число: "))
+
+print(sale_kaleidoscopes(count_kaleidoscopes))
