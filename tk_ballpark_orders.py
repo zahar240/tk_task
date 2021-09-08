@@ -17,3 +17,28 @@ Sample Input
 
 Sample Output 
 26.75"""
+
+def total_check(order):
+    order_price = {
+        "nacho" : 6,
+        "pizza" : 6, 
+        "cheeseburger" : 10, 
+        "water" : 4, 
+        "coke" : 5
+    }
+    tax = 7
+    total_result = 0
+    for position in order:
+        if position in order_price:
+            total_result += order_price[position]
+        elif position not in order_price:
+            total_result += order_price["coke"]
+    total_result_tax = total_result * (100 + tax) / 100
+    return round(total_result_tax, 2)
+    
+ballpark_order = input("Введите список из четырех покупок через пробел: ").lower().split()
+
+print(total_check(ballpark_order))
+
+
+    
